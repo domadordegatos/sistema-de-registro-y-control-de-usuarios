@@ -1,0 +1,38 @@
+.alerta_imagen{
+	width: 55rem;
+	position: absolute;
+	border-radius: 25px;
+	top: 7rem;
+	left: 17rem;
+}
+.centrar{
+  padding: 0 25% 5rem 25%;
+}
+#carnet{
+  border-radius: 20px;
+  width: 40rem;
+  height: 23rem;
+  border: white solid 0.2rem;
+  box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.71);
+}
+body{
+  height: 100%;
+}
+form{
+  padding-top: 2%;
+}
+body{
+  background-image: url(./imagenes/fondo2.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}h1{
+  padding: none;
+  margin:none;
+}#codigo{
+  background-color: rgba(0, 0, 0, 0);
+  border: none rgba(0, 0, 0, 0);
+  background: rgba(255, 255, 255, 0);
+  /* visibility: hidden; */
+width: 0.1%;
+}

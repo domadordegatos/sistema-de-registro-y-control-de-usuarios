@@ -1,0 +1,92 @@
+<html lang="es">
+<head>
+    <title>Login Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Prime login Form a Responsive Web Template, Bootstrap Web Templates, Flat Web Templates, Android Compatible Web Template, Smartphone Compatible Web Template, Free Webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design">
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <link rel="stylesheet" href="../diseño/csslogin/css/style.css" type="text/css" media="all">
+    <link href="//fonts.googleapis.com/css?family=Mukta+Mahee:200,300,400,500,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="../diseño/csslogin/css/font-awesome.css" type="text/css" media="all">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="content-w3ls">
+        <div class="content-bottom">
+            <form action="" method="post">
+                <div class="field-group">
+                    <span class="fa fa-user" aria-hidden="true"></span>
+                    <div class="wthree-field">
+                        <input name="username" id="username" type="text" value="" placeholder="username" required>
+                    </div>
+                </div>
+                <div class="field-group">
+                    <span class="fa fa-lock" aria-hidden="true"></span>
+                    <div class="wthree-field">
+                        <input name="pass" id="pass" type="Password" placeholder="password">
+                    </div>
+                </div>
+                <div class="field-group">
+                    <div class="check">
+                        <label class="">
+                            <input type="checkbox" onclick="myFunction()">
+                            <i> </i>Mostrar clave</label>
+                    </div>
+                    <!-- script for show password -->
+                    <script>
+                        function myFunction() {
+                            var x = document.getElementById("myInput");
+                            if (x.type === "password") {
+                                x.type = "text";
+                            } else {
+                                x.type = "password";
+                            }
+                        }
+                    </script>
+                    <!-- //script for show password -->
+                </div>
+                <div class="wthree-field">
+                    <input id="saveForm" name="saveForm" type="submit" value="Log in" />
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="copyright text-center">
+        <p>Proyecto creado por Neyder Neme | Estudiante de ingenieria de sistemas 2019
+        </p>
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+$(document).ready(function(){
+  $('#saveForm').click(function(){
+     console.log("entro en funcion");
+     cadena="user=" + $('#username').val() +
+           "&pass=" + $('#pass').val();
+
+     $.ajax({
+       type:"POST",
+       data:cadena,
+       url:"../procesos/login2.php",
+       success:function(r){
+         if(r==1){
+           window.location="../inicio/inicio.php";
+           // console.log("funciona");
+         }else if(r==0){
+           console.log("no encontro");
+         }else {
+           console.log("no funciona");
+         }
+       }
+     });
+   });
+  });
+</script>

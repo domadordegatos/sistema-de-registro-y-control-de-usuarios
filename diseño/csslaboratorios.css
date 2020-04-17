@@ -1,0 +1,362 @@
+.alerta_imagen{
+	width: 55rem;
+	position: absolute;
+	border-radius: 25px;
+	top: 7rem;
+	left: 17rem;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+.card{
+	animation-duration: 0.5s;
+  animation-name: slidein;
+}
+.hola{
+	border: 2px solid;
+	border-radius: 1rem;
+	border-color: rgb(255, 255, 255);
+	padding: 0.5rem;
+}
+body{
+	background-image: url(../diseño/imagenes/fondo_acuerdo2.png);
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+@keyframes slidein {
+  from {
+		margin-left: -10%;
+		/* width: -100%; */
+  }
+ to {
+		margin-left: 40%;
+    /* width: 11rem; */
+  }
+}
+
+body,
+html {
+	display: flex;
+	height: 100%;
+	width: 100%;
+	/* background-color: rgb(242, 242, 242); */
+	font-family: 'Roboto', sans-serif;
+	color: rgba(0, 0, 16, 0.8);
+	font-weight: 700;
+	padding: 0;
+	margin: 0;
+}
+body{
+	display: flex;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+	color: rgba(0, 0, 16, 0.8);
+	text-decoration: none;
+}
+
+a:hover,
+a:active {
+	border-bottom: 0.1em solid rgba(0, 0, 16, 0.8);
+	color: rgba(0, 0, 16, 0.8);
+	text-decoration: none;
+}
+
+span {
+	color: rgba(0, 0, 16, 0.4);
+	font-size: 70%;
+}
+
+header {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin: auto;
+	width: 34.6rem;
+}
+
+.card {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin: auto;
+	-webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 16, 0.19), 0 0.3rem 0.3rem rgba(0, 0, 16, 0.23);
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 16, 0.19), 0 0.3rem 0.3rem rgba(0, 0, 16, 0.23);
+	background-color: rgba(255, 255, 255, 0.32);
+	padding: 0.6rem;
+	/* width: 33rem; */
+	/*  */
+	border-radius: 2rem;
+}
+
+.rating-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: block;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	padding: 0.01rem 0.01rem;
+	width: 100%;
+}
+
+.rating-text p {
+	color: rgba(0, 0, 16, 0.8);
+	font-size: 1.3rem;
+	padding: 0.01rem;
+}
+
+.rating {
+	background-color: rgba(0, 0, 16, 0.8);
+	padding: 0.4rem 0.4rem 0.1rem 0.4rem;
+	border-radius: 2.2rem;
+	/*  */
+	text-align: center;
+}
+
+svg, #svg {
+	fill: rgb(242, 242, 242);
+	height: 6.2rem;
+	width: 6.2rem;
+	margin: 0.2rem;
+}
+
+#radios label {
+	position: relative;
+}
+
+input[type="radio"] {
+	position: absolute;
+	opacity: 0;
+}
+
+input[type="radio"] + svg {
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+input + svg {
+	cursor: pointer;
+}
+
+input[class="derecho"]:hover + svg,
+input[class="derecho"]:checked + svg,
+input[class="derecho"]:focus + svg {
+	fill: rgb(240, 211, 17);
+}
+
+input[class="contaduria"]:hover + svg,
+input[class="contaduria"]:checked + svg,
+input[class="contaduria"]:focus + svg {
+	fill: rgb(24, 124, 196);
+}
+
+input[class="sistemas"]:hover + svg,
+input[class="sistemas"]:checked + svg,
+input[class="sistemas"]:focus + svg {
+	fill: rgb(238, 154, 10);
+}
+
+input[class="electronica"]:hover + svg,
+input[class="electronica"]:checked + svg,
+input[class="electronica"]:focus + svg {
+	fill: rgb(27, 193, 0);
+}
+
+input[class="enfermeria"]:hover + svg,
+input[class="enfermeria"]:checked + svg,
+input[class="enfermeria"]:focus + svg {
+	fill: rgb(239, 42, 16);
+}
+input[class="ambiental"]:hover + svg,
+input[class="ambiental"]:checked + svg,
+input[class="ambiental"]:focus + svg {
+	fill: rgb(63, 217, 0);
+}
+input[class="agricola"]:hover + svg,
+input[class="agricola"]:checked + svg,
+input[class="agricola"]:focus + svg {
+	fill: rgb(34, 255, 15);
+}
+input[class="psicologia"]:hover + svg,
+input[class="psicologia"]:checked + svg,
+input[class="psicologia"]:focus + svg {
+	fill: rgb(205, 55, 29);
+}
+input[class="administracion"]:hover + svg,
+input[class="administracion"]:checked + svg,
+input[class="administracion"]:focus + svg {
+	fill: rgb(12, 155, 159);
+}
+input[class="docente"]:hover + svg,
+input[class="docente"]:checked + svg,
+input[class="docente"]:focus + svg {
+	fill: rgb(113, 110, 255);
+}
+input[class="invitado"]:hover + svg,
+input[class="invitado"]:checked + svg,
+input[class="invitado"]:focus + svg {
+	fill: rgb(145, 232, 255);
+}
+
+@media screen and (max-width: 650px) and (max-height: 700px) {
+	body,
+	html {
+		font-size: 0.7rem;
+	}
+	header h1 {
+		font-size: 4em;
+	}
+	footer p {
+		font-size: 2em;
+	}
+}
+
+@media screen and (max-height: 700px) {
+	body,
+	html {
+		font-size: 0.7rem;
+	}
+	header h1 {
+		font-size: 4em;
+	}
+	footer p {
+		font-size: 2em;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	body,
+	html {
+		font-size: 0.7rem;
+	}
+	header h1 {
+		font-size: 4em;
+	}
+	footer p {
+		font-size: 2em;
+	}
+}
+
+@media screen and (max-width: 450px) and (max-height: 550px) {
+	body,
+	html {
+		font-size: 0.6rem;
+	}
+	header h1 {
+		font-size: 4.6em;
+	}
+	footer p {
+		font-size: 3em;
+	}
+}
+
+@media screen and (max-height: 550px) {
+	body,
+	html {
+		font-size: 0.6rem;
+	}
+	header h1 {
+		font-size: 4.6em;
+	}
+	footer p {
+		font-size: 3em;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	body,
+	html {
+		font-size: 0.6rem;
+	}
+	header h1 {
+		font-size: 4.6em;
+	}
+	footer p {
+		font-size: 3em;
+	}
+}
+
+@media screen and (max-width: 400px) and (max-height: 500px) {
+	body,
+	html {
+		height: 500px;
+		width: 400px;
+	}
+}
+
+@media screen and (max-height: 500px) {
+	body,
+	html {
+		height: 500px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	body,
+	html {
+		width: 400px;
+	}
+}
+body {
+  /* background: #ecf0f1; /* color de la letra seleccionada */ */
+  color: #da3131; /* color de la letra */
+}
+.rating-form-2{
+	-webkit-transform: translate(0%,0%);
+          transform: translate(0%,0%);
+					padding: 2% 2% 2% 2%;
+					text-align: left;
+					font-size: 1.7rem;
+					color: white;
+}
+input[class="trc"] {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+label[class="terc"] {
+  position: relative;
+  display: inline-block;
+  margin-right: 0.8rem;
+  margin-bottom: 0.8rem;
+  padding-left: 2.8rem;
+  padding-right: 0.8rem;
+  line-height: 36px;
+  cursor: pointer;
+}
+label[class="terc"]::before {
+  content: " ";
+  position: absolute;
+  top: 6px;
+  left: 0;
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #da3131;
+  border-radius: 4px;
+  z-index: -1;
+}
+input[class="trc"] + label[class="terc"]::before {
+  border-radius: 18px;
+}
+/* Checked */
+input[class="trc"]:checked + label[class="terc"] {
+  padding-left: 2rem;
+  color: #fff;
+}
+input[class="trc"]:checked + label[class="terc"]::before {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #da3131;
+}
+/* Transition */
+label[class="terc"],
+label[class="terc"]::before {
+  -webkit-transition: .25s all ease;
+  transition: .25s all ease;
+}

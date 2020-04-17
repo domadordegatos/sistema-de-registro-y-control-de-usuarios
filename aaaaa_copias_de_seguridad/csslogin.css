@@ -1,0 +1,39 @@
+body{
+  background: linear-gradient(135deg, #0b6f6f 0%, #6c0870 100%);
+  width: 100%;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+*{
+  padding: 0px;
+  margin: 0px;
+}
+.contenedor{
+  padding: 0 35% 0 35%;
+  width: 100%;
+  text-align: center;
+}
+#boton{
+  padding-top: 10%;
+text-align: center;
+}
+#entrarSistema{
+  padding: 1% 8% 1% 8%;
+}
+.text-muted{
+  text-align: center;
+  padding-top: 5%;
+  font-size: 60px;
+}
+.text-black-50{
+  padding-top: 2%;
+  text-align: center;
+}
+#titulo{
+  padding: 8% 35% 2% 35%;
+  text-align: center;
+}
+h1{
+  border-radius: 15px;
+}
